@@ -3,9 +3,8 @@ import { createContext, useEffect, useState } from "react";
 export const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState(() => {
-        return localStorage.getItem("theme") || "light";
-    });
+    // Website hamesha Light Mode me start hogi
+    const [theme, setTheme] = useState("light");
 
     useEffect(() => {
         if (theme === "dark") {
@@ -13,8 +12,6 @@ const ThemeProvider = ({ children }) => {
         } else {
             document.documentElement.classList.remove("dark");
         }
-
-        localStorage.setItem("theme", theme);
     }, [theme]);
 
     return (
