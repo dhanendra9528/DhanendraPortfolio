@@ -6,7 +6,7 @@ const Work = () => {
   return (
     <section
       id="work"
-      className="min-h-screen py-20 bg-white scroll-mt-24"
+      className="min-h-screen py-20 bg-white dark:bg-zinc-950 scroll-mt-24 transition-all duration-300"
     >
       <div className="max-w-7xl mx-auto px-6">
 
@@ -14,17 +14,17 @@ const Work = () => {
 
         <div className="text-center mb-16">
 
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black dark:text-white">
 
             Featured{" "}
 
-            <span className="text-teal-600">
+            <span className="text-teal-600 dark:text-teal-400">
               Projects
             </span>
 
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto transition-colors duration-300">
 
             Crafting innovative web experiences with the latest technologies.
 
@@ -40,7 +40,21 @@ const Work = () => {
 
             <div
               key={index}
-              className="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 duration-300"
+              className="
+              group
+              rounded-2xl
+              overflow-hidden
+              border
+              border-gray-200
+              dark:border-zinc-700
+              bg-white
+              dark:bg-zinc-900
+              shadow-lg
+              hover:shadow-2xl
+              hover:-translate-y-2
+              transition-all
+              duration-300
+              "
             >
 
               {/* Image */}
@@ -50,7 +64,7 @@ const Work = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-56 object-cover group-hover:scale-110 duration-500"
+                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
 
               </div>
@@ -59,13 +73,13 @@ const Work = () => {
 
               <div className="p-6">
 
-                <h3 className="text-2xl font-bold mb-3">
+                <h3 className="text-2xl font-bold mb-3 text-black dark:text-white">
 
                   {project.title}
 
                 </h3>
 
-                <p className="text-gray-600 text-sm leading-7">
+                <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-7">
 
                   {project.description}
 
@@ -79,7 +93,17 @@ const Work = () => {
 
                     <span
                       key={i}
-                      className="px-3 py-1 rounded-full bg-gray-100 text-xs font-semibold"
+                      className="
+                      px-3
+                      py-1
+                      rounded-full
+                      bg-gray-100
+                      dark:bg-zinc-800
+                      text-zinc-700
+                      dark:text-zinc-300
+                      text-xs
+                      font-semibold
+                      "
                     >
 
                       {tech}
@@ -98,7 +122,25 @@ const Work = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center justify-center gap-2 w-full bg-zinc-700 hover:bg-zinc-800 text-white rounded-full py-3 font-semibold transition"
+                    className="
+                    mt-6
+                    inline-flex
+                    items-center
+                    justify-center
+                    gap-2
+                    w-full
+                    bg-teal-600
+                    hover:bg-teal-700
+                    dark:bg-teal-500
+                    dark:hover:bg-teal-600
+                    text-white
+                    rounded-full
+                    py-3
+                    font-semibold
+                    transition-all
+                    duration-300
+                    hover:scale-105
+                    "
                   >
 
                     Visit Website
