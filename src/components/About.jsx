@@ -72,7 +72,7 @@ const About = () => {
                         </div>
 
                         <a
-                            href="/resume.pdf"
+                            href="../Resume/Dhanendra Resume Full-Stack Web Developer Template .pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
