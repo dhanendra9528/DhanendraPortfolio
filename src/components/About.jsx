@@ -74,6 +74,7 @@ const About = () => {
                         <a
                             href="../Resume/Dhanendra Resume Full-Stack Web Developer Template .pdf"
                             target="_blank"
+                            download="Dhanendra_Kumar_Resume.pdf"
                             rel="noopener noreferrer"
                             className="
                             inline-flex
@@ -95,6 +96,7 @@ const About = () => {
                         >
                             Download Resume
                         </a>
+                        
 
                     </div>
 

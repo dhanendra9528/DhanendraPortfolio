@@ -88,13 +88,13 @@ const Navbar = () => {
                     </button>
                     {/* Resume Button */}
                     <a
-                        href="../Resume/Dhanendra Resume Full-Stack Web Developer Template .pdf"
+                        href="/Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white dark:bg-teal-500 dark:hover:bg-teal-600 px-5 py-2 rounded-full font-semibold hover:bg-zinc-800 transition"
                     >
                         <FaDownload />
-                        Resume
+                        View Resume
                     </a>
 
                 </div>
