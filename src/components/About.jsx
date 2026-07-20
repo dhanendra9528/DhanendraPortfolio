@@ -71,32 +71,18 @@ const About = () => {
 
                         </div>
 
+                        {/* Resume Button */}
                         <a
-                            href="/public/Resume.pdf"
+                            href="/Resume.pdf"
                             target="_blank"
-                            download="Dhanendra_Kumar_Resume.pdf"
                             rel="noopener noreferrer"
-                            className="
-                            inline-flex
-                            items-center
-                            justify-center
-                            px-8
-                            py-4
-                            rounded-full
-                            bg-teal-600
-                            hover:bg-teal-700
-                            dark:bg-teal-500
-                            dark:hover:bg-teal-600
-                            text-white
-                            font-semibold
-                            transition-all
-                            duration-300
-                            hover:scale-105
-                            "
+                            className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white dark:bg-teal-500 dark:hover:bg-teal-600 px-5 py-2 rounded-full font-semibold hover:bg-zinc-800 transition"
                         >
-                            Download Resume
+                            <FaDownload />
+                            View Resume
                         </a>
-                        
+
+
 
                     </div>
 
